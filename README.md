@@ -1,0 +1,2 @@
+# odoo
+instancia odoo.sh
