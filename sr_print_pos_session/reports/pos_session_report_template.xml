@@ -15,31 +15,31 @@
                                 <p t-field="doc.config_id"/>
                             </div>
                             <div class="col-auto mw-100 mb-2">
-                                <strong>Responsible Person:</strong>
+                                <strong>Responsable:</strong>
                                 <p t-field="doc.user_id"/>
                             </div>
                             <div class="col-auto mw-100 mb-2">
-                                <strong>Opening Date:</strong>
+                                <strong>Fecha apertura:</strong>
                                 <p t-field="doc.start_at"/>
                             </div>
                             <div class="col-auto mw-100 mb-2">
-                                <strong>Closing Date:</strong>
+                                <strong>Fecha cierre:</strong>
                                 <p t-field="doc.stop_at"/>
                             </div>
                         </div>
 
-                        <h2>Summary By Payment Methods</h2>
+                        <h2>Resumen por métodos de pago</h2>
                         <table class="table table-condensed table-striped">
                             <thead>
                                 <tr>
-                                    <th>Reference</th>
-                                    <th class="text-right">Journal</th>
-                                    <th class="text-right">Starting Balance</th>
-                                    <th class="text-right">Ending Balance</th>
-                                    <th class="text-right">Transactions Subtotal</th>
-                                    <th class="text-right">Difference</th>
-                                    <th class="text-right">Currency</th>
-                                    <th class="text-right">Status</th>
+                                    <th>Referencia</th>
+                                    <th class="text-right">Diario</th>
+                                    <th class="text-right">Balance inicial</th>
+                                    <th class="text-right">Balance final</th>
+                                    <th class="text-right">Subtotal de transacciones</th>
+                                    <th class="text-right">Diferencia</th>
+                                    <th class="text-right">Moneda</th>
+                                    <th class="text-right">Estatus</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -74,14 +74,14 @@
                             </tbody>
                         </table>
 
-                        <h2>Summary By Statements</h2>
+                        <h2>Resumen por declaraciones</h2>
                         <table class="table table-condensed table-striped">
                             <thead>
                                 <tr>
-                                    <th>Order Reference</th>
-                                    <th>Order Date</th>
-                                    <th>Customer</th>
-                                    <th>Label</th>
+                                    <th>Por referencia</th>
+                                    <th>Por Fecha</th>
+                                    <th>Cliente</th>
+                                    <th>Etiqueta</th>
                                     <th class="text-right">Amount</th>
                                 </tr>
                             </thead>
@@ -92,7 +92,7 @@
                                         <span t-set="total_cash" t-value="0"/>
                                         <tr>
                                             <td>
-                                                <b>Cash</b>
+                                                <b>Efectivo</b>
                                             </td>
                                             <td colspan='4'></td>
                                         </tr>
@@ -134,7 +134,7 @@
                                         <span t-set="total_credit" t-value="0"/>
                                         <tr>
                                             <td>
-                                                <b>Credit</b>
+                                                <b>Credito</b>
                                             </td>
                                             <strong>
                                                 <td colspan='4'></td>
@@ -182,10 +182,10 @@
                         <table class="table-condensed" width="100%">
                             <tr>
                                 <td width="50%" class="text-center">
-                                    <strong>Salesperson</strong>
+                                    <strong>Vendedor</strong>
                                 </td>
                                 <td width="50%" class="text-center">
-                                    <strong>Manager</strong>
+                                    <strong>Administrador</strong>
                                 </td>
                             </tr>
                         </table>
